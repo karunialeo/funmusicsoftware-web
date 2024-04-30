@@ -6,8 +6,13 @@ $grid-gutter-width: 40px !default;
 $border-radius-base: 4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #f8c95a !default;
+$brand-primary: #fb6f53 !default;
 $brand-secondary: #09c6ab !default;
+
+$screen-sm: 768px;
+
+$brand-blue: #00c8ff;
+$brand-green: #31b493;
 
 $brand-white: #fff;
 $brand-black: #000;
@@ -365,8 +370,8 @@ figure {
 
 //SLIDER
 #fh5co-hero {
-  min-height: 630px;
-  height: 630px;
+  min-height: 730px;
+  height: 730px;
   background: $brand-white url(../images/loader.gif) no-repeat center center;
   .btn {
     font-size: 24px;
@@ -384,11 +389,23 @@ figure {
       position: relative;
       overflow: hidden;
       li {
+        &.slide-fv {
+          background-color: #f8c95a;
+          @media screen and (max-width: $screen-sm) {
+            background-color: #bf8c16;
+          }
+        }
+        &.slide-fd {
+          background-color: #14c5d8;
+          @media screen and (max-width: $screen-sm) {
+            background-color: #00a3b5;
+          }
+        }
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom center;
-        min-height: 630px;
-        height: 630px;
+        min-height: 730px;
+        height: 730px;
         position: relative;
         &:after {
           position: absolute;
@@ -397,7 +414,7 @@ figure {
           left: 0;
           right: 0;
           content: "";
-          background: rgba($brand-black, 0.4);
+          // background: rgba($brand-black, 0.4);
           z-index: 1;
         }
       }
@@ -425,16 +442,24 @@ figure {
       display: none;
     }
     .slider-text {
+      border-spacing: 80px;
       display: table;
       opacity: 0;
-      min-height: 630px;
-      height: 630px;
+      min-height: 730px;
+      height: 730px;
       z-index: 9;
+
+      @media screen and (max-width: $screen-sm) {
+        border-spacing: 0;
+      }
       > .slider-text-inner {
         display: table-cell;
         vertical-align: middle;
-        min-height: 700px;
-        // height: 700px;
+
+        @media screen and (max-width: $screen-sm) {
+          padding: 0 30px;
+        }
+
         h1,
         h2 {
           margin: 0;
@@ -443,27 +468,24 @@ figure {
         }
         h1 {
           margin-bottom: 20px;
-          font-size: 40px;
+          font-size: 32px;
           line-height: 1.3;
           font-weight: 300;
           @media screen and (max-width: $screen-sm) {
-            font-size: 30px;
+            font-size: 24px;
           }
         }
         h2 {
           font-size: 20px;
           line-height: 1.5;
-          margin-bottom: 30px;
+          margin-bottom: 24px;
           font-family: $font-primary;
           a {
             color: rgba($brand-white, 0.5);
           }
         }
-        // .heading-section {
-        // }
         .btn {
           padding: 18px 30px !important;
-          // background: $brand-primary!important;
           color: $brand-white;
           border: none !important;
           font-size: 12px;
@@ -477,17 +499,6 @@ figure {
             box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
           }
         }
-        // .form-inline {
-        // 	.form-group {
-        // 		width: 100%!important;
-        // 		margin-bottom: 10px;
-        // 		.form-control {
-        // 			width: 100%;
-        // 			background: $brand-white;
-        // 			border: none;
-        // 		}
-        // 	}
-        // }
         .fh5co-lead {
           font-size: 20px;
           color: $brand-white;
@@ -515,7 +526,8 @@ figure {
 #fh5co-staff,
 #fh5co-contact,
 #fh5co-footer {
-  padding: 7em 0;
+  padding-top: 5em;
+  padding-bottom: 2em;
   clear: both;
   @media screen and (max-width: $screen-sm) {
     padding: 3em 0;
@@ -621,7 +633,7 @@ figure {
   .course-img {
     width: 50%;
     display: inline-block;
-    @media screen and(max-width: $screen-sm) {
+    @media screen and (max-width: $screen-sm) {
       width: 100%;
     }
   }
@@ -631,7 +643,7 @@ figure {
     background-repeat: no-repeat;
     position: relative;
     @include transition(0.3s);
-    @media screen and(max-width: $screen-sm) {
+    @media screen and (max-width: $screen-sm) {
       height: 270px;
     }
   }
@@ -771,7 +783,7 @@ figure {
 }
 
 #fh5co-testimonial {
-  background: #1f5f8b;
+  // background: #1f5f8b;
   position: relative;
   .overlay {
     position: absolute;
@@ -780,12 +792,12 @@ figure {
     left: 0;
     right: 0;
     content: "";
-    background: #d2a846d8;
+    // background: #d2a846d8;
   }
   .testimony-slide {
     text-align: center;
     position: relative;
-    color: $brand-white !important;
+    // color: $brand-white !important;
     span {
       font-size: 14px;
       text-transform: uppercase;
@@ -851,7 +863,7 @@ figure {
   .fh5co-heading {
     margin-bottom: 3em;
     h2 {
-      color: $brand-white;
+      // color: $brand-white;
       margin-bottom: 20px !important;
       &:after {
         background: transparent !important;
@@ -900,7 +912,7 @@ figure {
   width: 100%;
   float: left;
   clear: both;
-  @media screen and(max-width: $screen-sm) {
+  @media screen and (max-width: $screen-sm) {
     margin-bottom: 30px;
   }
 }
@@ -1210,8 +1222,16 @@ figure {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #e5af30d8;
     @include transition(0.5s);
+  }
+  .fv-footer {
+    background: #e5af30d8;
+  }
+  .fd-footer {
+    background: #00c8ffd8;
+  }
+  .fp-footer {
+    background: #31b493d8;
   }
   .fh5co-footer-links {
     padding: 0;
@@ -1280,7 +1300,7 @@ figure {
   display: none;
   @include translateX(270px);
   @include transition(0.5s);
-  @media screen and(max-width: $screen-sm) {
+  @media screen and (max-width: $screen-sm) {
     display: block;
   }
   .offcanvas & {
@@ -1288,6 +1308,7 @@ figure {
   }
   a {
     color: rgba(255, 255, 255, 0.5);
+    font-size: 24px;
     &:hover {
       color: rgba(255, 255, 255, 0.8);
     }
@@ -1469,8 +1490,8 @@ figure {
 }
 .fh5co-nav-toggle {
   position: absolute;
-  right: 0px;
-  top: 55px;
+  right: 15px;
+  top: 25px;
   z-index: 21;
   padding: 6px 0 0 0;
   display: block;
@@ -1526,6 +1547,28 @@ figure {
     &:focus,
     &:active {
       background: $brand-primary;
+      color: $brand-white;
+    }
+  }
+}
+.btn-secondary {
+  background: $brand-secondary;
+  color: $brand-white;
+  border: 2px solid $brand-secondary;
+  &:hover,
+  &:focus,
+  &:active {
+    background: lighten($brand-secondary, 5%) !important;
+    border-color: lighten($brand-secondary, 5%) !important;
+  }
+  &.btn-outline {
+    background: transparent;
+    color: $brand-secondary;
+    border: 2px solid $brand-secondary;
+    &:hover,
+    &:focus,
+    &:active {
+      background: $brand-secondary;
       color: $brand-white;
     }
   }
@@ -1697,5 +1740,164 @@ figure {
 .animate-box {
   .js & {
     opacity: 0;
+  }
+}
+
+.brand-text {
+  width: 15rem;
+}
+
+.logo-all-app {
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.logo-fv-series {
+  width: 20rem;
+  margin-bottom: 30px;
+  // border: 4px solid $brand-gray;
+  // border-radius: 2px;
+  // border-radius: 50%;
+}
+
+.slide-content {
+  // background-color: red;
+  // display: flex;
+  // align-items: center !important;
+  // padding-bottom: 500px;
+  text-align: right;
+  @media screen and (max-width: $screen-sm) {
+    text-align: center;
+  }
+}
+
+.image-container {
+  top: 0;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: $screen-sm) {
+    height: 100%;
+  }
+  @media screen and (max-width: $screen-sm) {
+    position: absolute;
+    width: 100%;
+  }
+}
+.image-background {
+  @media screen and (max-width: $screen-sm) {
+    width: 90%;
+    // height: 80%;
+    opacity: 0.1;
+  }
+}
+
+.slider-logo {
+  display: flex;
+  justify-content: end;
+  @media screen and (max-width: $screen-sm) {
+    background-color: white;
+    padding: 10px 0;
+    opacity: 0.7;
+    border-radius: 5px;
+    justify-content: center;
+  }
+  margin-bottom: 20px;
+}
+
+.preview-container {
+  display: flex;
+  column-gap: 30px;
+
+  @media screen and (max-width: $screen-sm) {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+
+.preview-button-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 20%;
+  margin-right: 40px;
+  // background-color: red;
+
+  @media screen and (max-width: $screen-sm) {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.preview-image-container {
+  width: 75%;
+  // background-color: red;
+
+  @media screen and (max-width: $screen-sm) {
+    width: 100%;
+  }
+}
+
+#book1,
+#book2 {
+  .preview-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #828282;
+    border: 2px solid #828282;
+  }
+
+  .download-btn-div {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  div > img {
+    width: 75%;
+    @media screen and (max-width: $screen-sm) {
+      width: 100%;
+    }
+  }
+}
+
+.button-primary-app {
+  // background-color: $brand-blue;
+  color: $brand-blue;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &.active {
+    background-color: $brand-blue;
+    color: $brand-white;
+  }
+
+  &:hover {
+    background-color: darken($brand-blue, 5%);
+    color: $brand-white;
+  }
+}
+
+.button-blue-app {
+  background-color: $brand-blue;
+  color: $brand-white;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($brand-blue, 5%);
+  }
+}
+
+.modal-dialog {
+  margin-top: 10%;
+  @media screen and (max-width: $screen-sm) {
+    margin-top: 25%;
   }
 }

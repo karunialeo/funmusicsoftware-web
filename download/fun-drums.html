@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Fun Music</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Free HTML5 Website Template by freehtml5.co"
+    />
+    <meta
+      name="keywords"
+      content="fun music, fun violin, fun piano, fun drums, accompaniment music"
+    />
+    <meta name="author" content="freehtml5.co" />
+
+    <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400"
+      rel="stylesheet"
+    />
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="../css/animate.css" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="../css/icomoon.css" />
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="../css/magnific-popup.css" />
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+
+    <!-- Flexslider  -->
+    <link rel="stylesheet" href="../css/flexslider.css" />
+
+    <!-- Pricing -->
+    <link rel="stylesheet" href="../css/pricing.css" />
+
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link
+      rel="shortcut icon"
+      href="../images/ICONWEB/icon-web-red.jpg"
+      type="image/png"
+    />
+
+    <!-- Modernizr JS -->
+    <script src="../js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+      <script src="../js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="fh5co-loader"></div>
+
+    <div id="page">
+      <nav class="fh5co-nav" role="navigation">
+        <!-- <div class="top">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 text-right">
+                <p class="site">www.funmusicsoftware.com</p>
+                <a href="tel:+62 856-9000-880" class="num"
+                  >Call: +62 856-9000-880</a
+                >
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="top-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-2">
+                <div id="fh5co-logo">
+                  <a href="../index.html">
+                    <!-- <i class="icon-study"></i> -->
+                    <img
+                      class="brand-text"
+                      src="../images/brand-text.png"
+                      alt="fun-music"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-xs-10 text-right menu-1">
+                <ul>
+                  <li><a href="../index.html">Home</a></li>
+                  <!-- <li><a href="courses.html">Courses</a></li> -->
+                  <!-- <li><a href="teacher.html">Teacher</a></li> -->
+                  <li><a href="../fun-violin.html">Fun Violin</a></li>
+                  <li class="has-dropdown active">
+                    <a href="#">Fun Drums</a>
+                    <ul class="dropdown">
+                      <li>
+                        <a href="../fun-drums.html">Download PDF</a>
+                      </li>
+                      <li><a href="#">How To Play</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../fun-piano.html">Fun Piano</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="fh5co-course-categories">
+        <div class="container">
+          <h1 style="text-align: center; margin-bottom: 40px">Preview</h1>
+        </div>
+
+        <!-- Button to trigger modal -->
+        <!-- <button type="button" class="btn btn-primary btn-lg">Open Modal</button> -->
+
+        <div class="container preview-container">
+          <div class="preview-button-container">
+            <!-- Button to show Book 1 and hide Book 2 -->
+            <button id="showBook1" class="button-primary-app">Book 1</button>
+
+            <!-- Button to show Book 2 and hide Book 1 -->
+            <button id="showBook2" class="button-primary-app">Book 2</button>
+          </div>
+          <div class="preview-image-container">
+            <div id="book1">
+              <div class="download-btn-div">
+                <button
+                  data-toggle="modal"
+                  data-target="#myModal"
+                  id="download-fd-book-1"
+                  class="button-blue-app validate-download"
+                >
+                  Download
+                </button>
+              </div>
+              <div class="preview-image">
+                <img src="../images/fd-book-1-preview.jpg" alt="" />
+              </div>
+            </div>
+            <div id="book2">
+              <div class="download-btn-div">
+                <button
+                  data-toggle="modal"
+                  data-target="#myModal"
+                  id="download-fd-book-2"
+                  class="button-blue-app validate-download"
+                >
+                  Download
+                </button>
+              </div>
+              <div class="preview-image">
+                <img src="../images/fd-book-2-preview.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="myModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myModalLabel"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                  Please login to get access this ebook
+                </h4>
+              </div>
+              <div class="modal-body">
+                <form id="loginForm">
+                  <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="username"
+                      name="username"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      name="password"
+                    />
+                  </div>
+                  <input type="hidden" id="buttonIdInput" name="buttonId" />
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-default"
+                      data-dismiss="modal"
+                      onclick="onClickClose()"
+                    >
+                      Close
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                      Submit
+                    </button>
+                    <!-- Additional buttons can be added here -->
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal success -->
+      <div
+        class="modal fade"
+        id="modal-success"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modal-success-label"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="modal-success-label">Info</h4>
+              </div>
+              <div class="modal-body">
+                <p>Success! Your download will starting...</p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-default"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <!-- Additional buttons can be added here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal error -->
+      <div
+        class="modal fade"
+        id="modal-error"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modal-error-label"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="modal-error-label">Info</h4>
+              </div>
+              <div class="modal-body">
+                <p id="error-message">Incorrect username or password</p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-default"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+                <!-- Additional buttons can be added here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer id="fh5co-footer" role="contentinfo">
+        <div class="overlay fd-footer"></div>
+        <div class="container">
+          <div class="row row-pb-md">
+            <div class="col-md-3 fh5co-widget">
+              <h3>About Fun Music</h3>
+              <p>
+                Unleash your creativity as you play along with dynamic
+                accompaniments, turning every practice session into an exciting
+                adventure. Whether you're a budding musician or a seasoned
+                player, Fun Music puts the joy of learning music right at your
+                fingertips. Dive in and let the rhythm of Fun Music fuel your
+                passion for music!.
+              </p>
+            </div>
+            <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+              <h3>Fun Violin</h3>
+              <ul class="fh5co-footer-links">
+                <li><a href="../fun-violin.html">Learn More</a></li>
+                <li><a href="../fun-violin.html">Download PDF</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+              <h3>Fun Piano</h3>
+              <ul class="fh5co-footer-links">
+                <li><a href="../fun-piano.html">Learn More</a></li>
+                <li><a href="../fun-piano.html">Download PDF</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+              <h3>Fun Drums</h3>
+              <ul class="fh5co-footer-links">
+                <li><a href="../fun-drums.html">Learn More</a></li>
+                <li><a href="../fun-drums.html">Download PDF</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+              <h3>Other</h3>
+              <ul class="fh5co-footer-links">
+                <li>
+                  <a href="http://www.funmusicsoftware.com/privacy-policy"
+                    >Privacy Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row copyright">
+            <div class="col-md-12 text-center">
+              <p>
+                <small class="block"
+                  >&copy; <span id="currentYear"></span> Fun Music. All Rights
+                  Reserved.</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="gototop js-top">
+      <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <!-- Stellar Parallax -->
+    <script src="../js/jquery.stellar.min.js"></script>
+    <!-- Carousel -->
+    <script src="../js/owl.carousel.min.js"></script>
+    <!-- Flexslider -->
+    <script src="../js/jquery.flexslider-min.js"></script>
+    <!-- countTo -->
+    <script src="../js/jquery.countTo.js"></script>
+    <!-- Magnific Popup -->
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/magnific-popup-options.js"></script>
+    <!-- Count Down -->
+    <script src="../js/simplyCountdown.js"></script>
+    <!-- Main -->
+    <script src="../js/main.js"></script>
+    <script src="../js/download-file.js"></script>
+    <script>
+      // Select all buttons with a specific class
+      var buttons = document.querySelectorAll(".validate-download");
+      // Loop through the NodeList and add event listeners to each button
+      buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          var buttonId = this.id;
+          // Set the value of the hidden input to the button ID
+          document.getElementById("buttonIdInput").value = buttonId;
+        });
+      });
+
+      document
+        .querySelector(".validate-download")
+        .addEventListener("click", function () {
+          var buttonId = this.id;
+          // Set the value of the hidden input to the button ID
+          document.getElementById("buttonIdInput").value = buttonId;
+        });
+
+      var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
+
+      // default example
+      simplyCountdown(".simply-countdown-one", {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+      });
+
+      //jQuery example
+      $("#simply-countdown-losange").simplyCountdown({
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: false,
+      });
+
+      // Get the current year
+      var currentYear = new Date().getFullYear();
+
+      // Set the current year in the HTML
+      document.getElementById("currentYear").textContent = currentYear;
+
+      // Function to get URL parameter value by name
+      function getUrlParameter(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+        var results = regex.exec(location.search);
+        return results === null
+          ? ""
+          : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+
+      // Get the value of the 'book' parameter from the URL
+      var book = getUrlParameter("book");
+
+      // Determine which div to display based on the value of the 'book' parameter
+      if (book === "1") {
+        document.getElementById("book1").style.display = "block";
+        document.getElementById("book2").style.display = "none";
+        document.getElementById("showBook1").classList.add("active");
+        document.getElementById("showBook2").classList.remove("active");
+      } else if (book === "2") {
+        document.getElementById("book1").style.display = "none";
+        document.getElementById("book2").style.display = "block";
+        document.getElementById("showBook1").classList.remove("active");
+        document.getElementById("showBook2").classList.add("active");
+      } else {
+        // Default to displaying Book 1 if the 'book' parameter is not provided or invalid
+        document.getElementById("book1").style.display = "block";
+        document.getElementById("book2").style.display = "none";
+        document.getElementById("showBook1").classList.add("active");
+        document.getElementById("showBook2").classList.remove("active");
+      }
+
+      // Button event listeners to show/hide divs
+      document
+        .getElementById("showBook1")
+        .addEventListener("click", function () {
+          document.getElementById("book1").style.display = "block";
+          document.getElementById("book2").style.display = "none";
+          document.getElementById("showBook1").classList.add("active");
+          document.getElementById("showBook2").classList.remove("active");
+        });
+
+      document
+        .getElementById("showBook2")
+        .addEventListener("click", function () {
+          document.getElementById("book2").style.display = "block";
+          document.getElementById("book1").style.display = "none";
+          document.getElementById("showBook1").classList.remove("active");
+          document.getElementById("showBook2").classList.add("active");
+        });
+
+      function validateDownload() {}
+
+      function downloadFile(fileUrl, filename) {
+        // Creating a temporary anchor element
+        var anchorElement = document.createElement("a");
+        anchorElement.setAttribute("target", "_blank");
+
+        // Setting the href attribute to the file URL
+        anchorElement.href = "http://" + fileUrl;
+
+        // Setting the download attribute to force download
+        anchorElement.download = filename; // You can customize the filename here if needed
+
+        // Clicking the anchor element programmatically
+        anchorElement.click();
+      }
+
+      function onClickClose() {
+        document.getElementById("loginForm").reset();
+      }
+    </script>
+  </body>
+</html>

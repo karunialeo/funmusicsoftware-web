@@ -72,8 +72,15 @@
     <!-- Theme style  -->
     <link rel="stylesheet" href="css/style.css" />
 
+    <link
+      rel="shortcut icon"
+      href="images/ICONWEB/icon-web-red.jpg"
+      type="image/png"
+    />
+
     <!-- Modernizr JS -->
     <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
       <script src="js/respond.min.js"></script>
@@ -84,30 +91,18 @@
 
     <div id="page">
       <nav class="fh5co-nav" role="navigation">
-        <div class="top">
+        <!-- <div class="top">
           <div class="container">
             <div class="row">
               <div class="col-xs-12 text-right">
                 <p class="site">www.funmusicsoftware.com</p>
-                <p class="num">Call: +01 123 456 7890</p>
-                <ul class="fh5co-social">
-                  <li>
-                    <a href="#"><i class="icon-facebook2"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="icon-twitter2"></i></a>
-                  </li>
-                  <!-- <li>
-                    <a href="#"><i class="icon-dribbble2"></i></a>
-                  </li> -->
-                  <!-- <li>
-                    <a href="#"><i class="icon-github"></i></a>
-                  </li> -->
-                </ul>
+                <a href="tel:+62 856-9000-880" class="num"
+                  >Call: +62 856-9000-880</a
+                >
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="top-menu">
           <div class="container">
             <div class="row">
@@ -115,34 +110,30 @@
                 <div id="fh5co-logo">
                   <a href="index.html">
                     <!-- <i class="icon-study"></i> -->
-                    Fun Music<span>.</span>
+                    <img
+                      class="brand-text"
+                      src="images/brand-text.png"
+                      alt="fun-music"
+                    />
                   </a>
                 </div>
               </div>
               <div class="col-xs-10 text-right menu-1">
                 <ul>
-                  <li class="active"><a href="index.html">Home</a></li>
-                  <!-- <li><a href="courses.html">Courses</a></li> -->
-                  <!-- <li><a href="teacher.html">Teacher</a></li> -->
-                  <li><a href="#fh5co-course-categories">Apps</a></li>
-                  <li><a href="#fh5co-course">Series</a></li>
-                  <li><a href="#fh5co-pricing">Pricing</a></li>
-                  <!-- <li class="has-dropdown">
-                    <a href="blog.html">Blog</a>
+                  <li class="active">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li><a href="fun-violin.html">Fun Violin</a></li>
+                  <!-- <li><a href="fun-drums.html">Fun Drums</a></li> -->
+
+                  <li class="has-dropdown">
+                    <a href="#">Fun Drums</a>
                     <ul class="dropdown">
-                      <li><a href="#">Web Design</a></li>
-                      <li><a href="#">eCommerce</a></li>
-                      <li><a href="#">Branding</a></li>
-                      <li><a href="#">API</a></li>
+                      <li><a href="fun-drums.html">Download PDF</a></li>
+                      <li><a href="#">How To Play</a></li>
                     </ul>
                   </li>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li class="btn-cta">
-                    <a href="#"><span>Login</span></a>
-                  </li>
-                  <li class="btn-cta">
-                    <a href="#"><span>Create a Course</span></a>
-                  </li> -->
+                  <li><a href="fun-piano.html">Fun Piano</a></li>
                 </ul>
               </div>
             </div>
@@ -153,34 +144,138 @@
       <aside id="fh5co-hero">
         <div class="flexslider">
           <ul class="slides">
-            <li style="background-image: url(images/img_bg_1.jpg)">
-              <div class="overlay-gradient"></div>
+            <li class="slide-fv">
+              <!-- <div class="overlay-gradient"></div> -->
               <div class="container">
                 <div class="row">
-                  <div class="col-md-8 col-md-offset-2 text-center slider-text">
+                  <div class="slider-text slide-content">
+                    <div class="image-container">
+                      <img
+                        src="images/fun-violin-preview.jpeg"
+                        class="image-background"
+                        alt=""
+                      />
+                    </div>
                     <div class="slider-text-inner">
+                      <div class="slider-logo">
+                        <img
+                          src="images/fun-violin-brand.png"
+                          style="
+                            width: 200px;
+                            align-self: center;
+                            /* transform: scale(1.05); */
+                          "
+                          alt=""
+                        />
+                      </div>
                       <h1>
-                        Elevate your violin practice with 'Fun Violin' – an app
-                        offering thousands of accompaniment songs tailored for
-                        violinist students.
+                        Exploring the violin with FUN VIOLIN promises an
+                        exciting and engaging journey. With a vast collection of
+                        play-along music tracks at various tempos, coupled with
+                        delightful animations, practice sessions will be filled
+                        with joy.
                       </h1>
-                      <!-- <h2>
-                        Brought to you by
-                        <a href="http://freehtml5.co/" target="_blank"
-                          >freehtml5.co</a
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: center;
+                        "
+                      >
+                        <p
+                          style="
+                            font-family: Source Sans Pro;
+                            font-size: 14px;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            color: white;
+                            margin: 5px;
+                          "
                         >
-                      </h2> -->
-                      <p>
-                        <a class="btn btn-primary btn-lg" href="#"
-                          >Download Fun Violin</a
+                          Fun Violin is Available in
+                        </p>
+                        <p
+                          style="
+                            font-family: Source Sans Pro;
+                            font-size: 14px;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            color: white;
+                          "
                         >
-                      </p>
+                          Playstore and App Store
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </li>
-            <li style="background-image: url(images/img_bg_2.jpg)">
+
+            <li class="slide-fd">
+              <div class="overlay-gradient"></div>
+              <div class="container">
+                <div class="row">
+                  <div class="slider-text slide-content">
+                    <div class="image-container">
+                      <img
+                        src="images/fun-drums-preview.jpeg"
+                        class="image-background"
+                        alt=""
+                      />
+                    </div>
+                    <div class="slider-text-inner">
+                      <div class="slider-logo">
+                        <img
+                          src="images/fun-drums-brand.png"
+                          style="width: 200px; align-self: center"
+                          alt=""
+                        />
+                      </div>
+                      <h1>
+                        Let's learn drums in a fun way with FUN DRUMS, specially
+                        designed for children or beginners. With play-along
+                        tracks for each exercise, and at various tempos. Plus,
+                        engaging animations that will make them enjoy it even
+                        more.
+                      </h1>
+                      <div
+                        style="
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: center;
+                        "
+                      >
+                        <p
+                          style="
+                            font-family: Source Sans Pro;
+                            font-size: 14px;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            color: white;
+                            margin: 5px;
+                          "
+                        >
+                          Fun Drums is Available in
+                        </p>
+                        <p
+                          style="
+                            font-family: Source Sans Pro;
+                            font-size: 14px;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            color: white;
+                          "
+                        >
+                          Playstore and App Store
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li style="background-color: #31b493">
               <div class="overlay-gradient"></div>
               <div class="container">
                 <div class="row">
@@ -198,39 +293,42 @@
                           >freehtml5.co</a
                         >
                       </h2> -->
-                      <p>
-                        <a class="btn btn-primary btn-lg btn-learn" href="#"
-                          >Download Fun Piano</a
+                      <div
+                        style="
+                          /* padding-left: 20%;
+                          padding-right: 20%; */
+                          display: flex;
+                          flex-direction: column;
+                          justify-content: center;
+                        "
+                      >
+                        <p
+                          style="
+                            font-family: Source Sans Pro;
+                            font-size: 14px;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            color: white;
+                            margin: 5px;
+                          "
                         >
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li style="background-image: url(images/img_bg_3.jpg)">
-              <div class="overlay-gradient"></div>
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-8 col-md-offset-2 text-center slider-text">
-                    <div class="slider-text-inner">
-                      <h1>
-                        Unleash your drumming potential with 'Fun Drums' – the
-                        ultimate app for drummer students, featuring a vast
-                        collection of accompaniment songs to enhance your
-                        practice sessions.
-                      </h1>
-                      <!-- <h2>
-                        Brought to you by
-                        <a href="http://freehtml5.co/" target="_blank"
-                          >freehtml5.co</a
+                          Fun Piano will soon Available in
+                        </p>
+                        <p
+                          style="
+                            font-family: Source Sans Pro;
+                            font-size: 14px;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            color: white;
+                          "
                         >
-                      </h2> -->
-                      <p>
-                        <a class="btn btn-primary btn-lg btn-learn" href="#"
-                          >Download Fun Drums</a
-                        >
-                      </p>
+                          Playstore and App Store
+                        </p>
+                        <!-- <a class="btn btn-primary btn-lg btn-learn" href="#"
+                          >Download in App Store</a
+                        > -->
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -246,8 +344,10 @@
             <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
               <h2>Our apps</h2>
               <p>
-                Dignissimos asperiores vitae velit veniam totam fuga molestias
-                accusamus alias autem provident. Odit ab aliquam dolor eius.
+                Step into the vibrant world of Fun Music, where your musical
+                journey comes alive! Elevate your learning experience with "Fun
+                Violin," "Fun Piano," and "Fun Drums" – our cutting-edge
+                software designed just for you.
               </p>
             </div>
           </div>
@@ -256,28 +356,23 @@
               <div class="services">
                 <span class="icon">
                   <!-- <i class="icon-shop"></i> -->
+                  <img
+                    class="logo-all-app"
+                    src="images/logo/fun-violin-logo.png"
+                    alt=""
+                  />
                 </span>
                 <div class="desc">
-                  <h3><a href="#">Fun Violin</a></h3>
+                  <h3><a href="fun-violin.html">Fun Violin</a></h3>
                   <p>
-                    Dignissimos asperiores vitae velit veniam totam fuga
-                    molestias accusamus alias autem provident. Odit ab aliquam
-                    dolor eius.
+                    Immerse yourself in the world of melodies with Fun Violin!
+                    This innovative software transforms your practice sessions
+                    into a captivating experience, allowing you to play along
+                    with dynamic accompaniments and refine your violin skills
+                    with every note.
                   </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 text-center animate-box">
-              <div class="services">
-                <span class="icon">
-                  <!-- <i class="icon-heart4"></i> -->
-                </span>
-                <div class="desc">
-                  <h3><a href="#">Fun Piano</a></h3>
-                  <p>
-                    Dignissimos asperiores vitae velit veniam totam fuga
-                    molestias accusamus alias autem provident. Odit ab aliquam
-                    dolor eius.
+                  <p style="text-align: center">
+                    <a href="fun-violin.html">LEARN MORE</a>
                   </p>
                 </div>
               </div>
@@ -286,92 +381,52 @@
               <div class="services">
                 <span class="icon">
                   <!-- <i class="icon-banknote"></i> -->
+                  <img
+                    class="logo-all-app"
+                    src="images/logo/fun-drums-logo.png"
+                    alt=""
+                  />
                 </span>
                 <div class="desc">
-                  <h3><a href="#">Fun Drums</a></h3>
+                  <h3><a href="fun-drums.html">Fun Drums</a></h3>
                   <p>
-                    Dignissimos asperiores vitae velit veniam totam fuga
-                    molestias accusamus alias autem provident. Odit ab aliquam
-                    dolor eius.
+                    Tap into the beat with Fun Drums! This dynamic software
+                    transforms your drumming practice into an exciting
+                    experience, letting you play along with lively
+                    accompaniments. Unleash your rhythm and elevate your
+                    drumming skills effortlessly with Fun Drums!
+                  </p>
+                  <p style="text-align: center">
+                    <a href="fun-drums.html">LEARN MORE</a>
                   </p>
                 </div>
               </div>
             </div>
-            <!-- <div class="col-md-3 col-sm-6 text-center animate-box">
+            <div class="col-md-4 col-sm-6 text-center animate-box">
               <div class="services">
                 <span class="icon">
-                  <i class="icon-lab2"></i>
+                  <img
+                    class="logo-all-app"
+                    src="images/ICONWEB/icon-web-blue-1.jpg"
+                    alt=""
+                  />
                 </span>
                 <div class="desc">
-                  <h3><a href="#">Science &amp; Technology</a></h3>
+                  <h3><a href="fun-piano.html">Fun Piano</a></h3>
                   <p>
-                    Dignissimos asperiores vitae velit veniam totam fuga
-                    molestias accusamus alias autem provident. Odit ab aliquam
-                    dolor eius.
+                    Discover the enchanting world of Fun Piano! Elevate your
+                    piano learning journey as you immerse yourself in this
+                    interactive software, providing a delightful way to play
+                    along with vibrant accompaniments. Unleash your musical
+                    creativity and hone your piano skills with Fun Piano's
+                    engaging and enjoyable features.
+                  </p>
+                  <p style="text-align: center">
+                    <a href="fun-piano.html">LEARN MORE</a>
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-md-3 col-sm-6 text-center animate-box">
-              <div class="services">
-                <span class="icon">
-                  <i class="icon-photo"></i>
-                </span>
-                <div class="desc">
-                  <h3><a href="#">Art &amp; Media</a></h3>
-                  <p>
-                    Dignissimos asperiores vitae velit veniam totam fuga
-                    molestias accusamus alias autem provident. Odit ab aliquam
-                    dolor eius.
-                  </p>
-                </div>
-              </div>
-            </div> -->
-            <!-- <div class="col-md-3 col-sm-6 text-center animate-box">
-              <div class="services">
-                <span class="icon">
-                  <i class="icon-home-outline"></i>
-                </span>
-                <div class="desc">
-                  <h3><a href="#">Real Estate</a></h3>
-                  <p>
-                    Dignissimos asperiores vitae velit veniam totam fuga
-                    molestias accusamus alias autem provident. Odit ab aliquam
-                    dolor eius.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center animate-box">
-              <div class="services">
-                <span class="icon">
-                  <i class="icon-bubble3"></i>
-                </span>
-                <div class="desc">
-                  <h3><a href="#">Language</a></h3>
-                  <p>
-                    Dignissimos asperiores vitae velit veniam totam fuga
-                    molestias accusamus alias autem provident. Odit ab aliquam
-                    dolor eius.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 text-center animate-box">
-              <div class="services">
-                <span class="icon">
-                  <i class="icon-world"></i>
-                </span>
-                <div class="desc">
-                  <h3><a href="#">Web &amp; Programming</a></h3>
-                  <p>
-                    Dignissimos asperiores vitae velit veniam totam fuga
-                    molestias accusamus alias autem provident. Odit ab aliquam
-                    dolor eius.
-                  </p>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
       </div>
@@ -379,10 +434,10 @@
       <div
         id="fh5co-counter"
         class="fh5co-counters"
-        style="background-image: url(images/img_bg_4.jpg)"
+        style="background-color: #fb6f53"
         data-stellar-background-ratio="0.5"
       >
-        <div class="overlay"></div>
+        <!-- <div class="overlay"></div> -->
         <div class="container">
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
@@ -392,7 +447,7 @@
                   <span
                     class="fh5co-counter js-counter"
                     data-from="0"
-                    data-to="3297"
+                    data-to="2000"
                     data-speed="5000"
                     data-refresh-interval="50"
                   ></span>
@@ -403,7 +458,7 @@
                   <span
                     class="fh5co-counter js-counter"
                     data-from="0"
-                    data-to="3700"
+                    data-to="5000"
                     data-speed="5000"
                     data-refresh-interval="50"
                   ></span>
@@ -414,145 +469,19 @@
                   <span
                     class="fh5co-counter js-counter"
                     data-from="0"
-                    data-to="5034"
+                    data-to="175"
                     data-speed="5000"
                     data-refresh-interval="50"
                   ></span>
                   <span class="fh5co-counter-label">Countries</span>
                 </div>
-                <!-- <div class="col-md-3 col-sm-6 text-center animate-box">
-                  <span class="icon"><i class="icon-head"></i></span>
-                  <span
-                    class="fh5co-counter js-counter"
-                    data-from="0"
-                    data-to="1080"
-                    data-speed="5000"
-                    data-refresh-interval="50"
-                  ></span>
-                  <span class="fh5co-counter-label">Certified Teachers</span>
-                </div> -->
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="fh5co-course">
-        <div class="container">
-          <div class="row animate-box">
-            <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-              <h2>Our Series</h2>
-              <p>
-                Dignissimos asperiores vitae velit veniam totam fuga molestias
-                accusamus alias autem provident. Odit ab aliquam dolor eius.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 animate-box">
-              <div class="course">
-                <a
-                  href="#"
-                  class="course-img"
-                  style="background-image: url(images/project-1.jpg)"
-                >
-                </a>
-                <div class="desc">
-                  <h3><a href="#">Alpha Series</a></h3>
-                  <p>
-                    Dignissimos asperiores vitae velit veniam totam fuga
-                    molestias accusamus alias autem provident. Odit ab aliquam
-                    dolor eius molestias accusamus alias autem provident. Odit
-                    ab aliquam dolor eius.
-                  </p>
-                  <span
-                    ><a href="#" class="btn btn-primary btn-sm btn-course"
-                      >Detail</a
-                    ></span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 animate-box">
-              <div class="course">
-                <a
-                  href="#"
-                  class="course-img"
-                  style="background-image: url(images/project-2.jpg)"
-                >
-                </a>
-                <div class="desc">
-                  <h3><a href="#">Beta Series</a></h3>
-                  <p>
-                    Dignissimos asperiores vitae velit veniam totam fuga
-                    molestias accusamus alias autem provident. Odit ab aliquam
-                    dolor eius molestias accusamus alias autem provident. Odit
-                    ab aliquam dolor eius.
-                  </p>
-                  <span
-                    ><a href="#" class="btn btn-primary btn-sm btn-course"
-                      >Detail</a
-                    ></span
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- <div class="col-md-6 animate-box">
-              <div class="course">
-                <a
-                  href="#"
-                  class="course-img"
-                  style="background-image: url(images/project-3.jpg)"
-                >
-                </a>
-                <div class="desc">
-                  <h3><a href="#">Science &amp; Technology</a></h3>
-                  <p>
-                    Dignissimos asperiores vitae velit veniam totam fuga
-                    molestias accusamus alias autem provident. Odit ab aliquam
-                    dolor eius molestias accusamus alias autem provident. Odit
-                    ab aliquam dolor eius.
-                  </p>
-                  <span
-                    ><a href="#" class="btn btn-primary btn-sm btn-course"
-                      >Take A Course</a
-                    ></span
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 animate-box">
-              <div class="course">
-                <a
-                  href="#"
-                  class="course-img"
-                  style="background-image: url(images/project-4.jpg)"
-                >
-                </a>
-                <div class="desc">
-                  <h3><a href="#">Health &amp; Psychology</a></h3>
-                  <p>
-                    Dignissimos asperiores vitae velit veniam totam fuga
-                    molestias accusamus alias autem provident. Odit ab aliquam
-                    dolor eius molestias accusamus alias autem provident. Odit
-                    ab aliquam dolor eius.
-                  </p>
-                  <span
-                    ><a href="#" class="btn btn-primary btn-sm btn-course"
-                      >Take A Course</a
-                    ></span
-                  >
-                </div>
-              </div>
-            </div> -->
-          </div>
-        </div>
-      </div>
-
-      <div
-        id="fh5co-testimonial"
-        style="background-image: url(images/school.jpg)"
-      >
+      <div id="fh5co-testimonial">
         <div class="overlay"></div>
         <div class="container">
           <div class="row animate-box">
@@ -630,375 +559,68 @@
         </div>
       </div>
 
-      <!-- <div id="fh5co-blog">
-        <div class="container">
-          <div class="row animate-box">
-            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-              <h2>Blog &amp; Events</h2>
-              <p>
-                Dignissimos asperiores vitae velit veniam totam fuga molestias
-                accusamus alias autem provident. Odit ab aliquam dolor eius.
-              </p>
-            </div>
-          </div>
-          <div class="row row-padded-mb">
-            <div class="col-md-4 animate-box">
-              <div class="fh5co-event">
-                <div class="date text-center">
-                  <span>15<br />Mar.</span>
-                </div>
-                <h3><a href="#">USA, International Triathlon Event</a></h3>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                </p>
-                <p><a href="#">Read More</a></p>
-              </div>
-            </div>
-            <div class="col-md-4 animate-box">
-              <div class="fh5co-event">
-                <div class="date text-center">
-                  <span>15<br />Mar.</span>
-                </div>
-                <h3><a href="#">USA, International Triathlon Event</a></h3>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                </p>
-                <p><a href="#">Read More</a></p>
-              </div>
-            </div>
-            <div class="col-md-4 animate-box">
-              <div class="fh5co-event">
-                <div class="date text-center">
-                  <span>15<br />Mar.</span>
-                </div>
-                <h3><a href="#">New Device Develope by Microsoft</a></h3>
-                <p>
-                  Far far away, behind the word mountains, far from the
-                  countries Vokalia and Consonantia, there live the blind texts.
-                </p>
-                <p><a href="#">Read More</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 col-md-4">
-              <div class="fh5co-blog animate-box">
-                <a
-                  href="#"
-                  class="blog-img-holder"
-                  style="background-image: url(images/project-1.jpg)"
-                ></a>
-                <div class="blog-text">
-                  <h3><a href="#">Healty Lifestyle &amp; Living</a></h3>
-                  <span class="posted_on">March. 15th</span>
-                  <span class="comment"
-                    ><a href="">21<i class="icon-speech-bubble"></i></a
-                  ></span>
-                  <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4">
-              <div class="fh5co-blog animate-box">
-                <a
-                  href="#"
-                  class="blog-img-holder"
-                  style="background-image: url(images/project-2.jpg)"
-                ></a>
-                <div class="blog-text">
-                  <h3><a href="#">Healty Lifestyle &amp; Living</a></h3>
-                  <span class="posted_on">March. 15th</span>
-                  <span class="comment"
-                    ><a href="">21<i class="icon-speech-bubble"></i></a
-                  ></span>
-                  <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-4">
-              <div class="fh5co-blog animate-box">
-                <a
-                  href="#"
-                  class="blog-img-holder"
-                  style="background-image: url(images/project-3.jpg)"
-                ></a>
-                <div class="blog-text">
-                  <h3><a href="#">Healty Lifestyle &amp; Living</a></h3>
-                  <span class="posted_on">March. 15th</span>
-                  <span class="comment"
-                    ><a href="">21<i class="icon-speech-bubble"></i></a
-                  ></span>
-                  <p>
-                    Far far away, behind the word mountains, far from the
-                    countries Vokalia and Consonantia, there live the blind
-                    texts.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <div id="fh5co-pricing" class="fh5co-bg-section">
-        <div class="container">
-          <div class="row animate-box">
-            <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-              <h2>Plan &amp; Pricing</h2>
-              <p>
-                Dignissimos asperiores vitae velit veniam totam fuga molestias
-                accusamus alias autem provident. Odit ab aliquam dolor eius.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="pricing pricing--rabten">
-              <div class="col-md-4 animate-box">
-                <div class="pricing__item">
-                  <div class="wrap-price">
-                    <!-- <div class="icon icon-user2"></div> -->
-                    <h3 class="pricing__title">Alpha Series</h3>
-                    <!-- <p class="pricing__sentence">Single user license</p> -->
-                  </div>
-                  <div class="pricing__price">
-                    <span class="pricing__anim pricing__anim--2">
-                      <span class="pricing__period">starting from</span>
-                    </span>
-                    <span class="pricing__anim pricing__anim--1">
-                      <span class="pricing__currency">$</span>4.99
-                    </span>
-                    <!-- <span class="pricing__anim pricing__anim--2">
-                      <span class="pricing__period">per year</span>
-                    </span> -->
-                  </div>
-                  <div class="wrap-price">
-                    <ul class="pricing__feature-list">
-                      <li class="pricing__feature">1000 songs</li>
-                      <li class="pricing__feature">other feature</li>
-                      <li class="pricing__feature">other feature</li>
-                      <li class="pricing__feature">other feature</li>
-                      <li class="pricing__feature">other feature</li>
-                      <li class="pricing__feature">other feature</li>
-                      <li class="pricing__feature">other feature</li>
-                    </ul>
-                    <button class="pricing__action">Choose plan</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 animate-box">
-                <div class="pricing__item">
-                  <div class="wrap-price">
-                    <!-- <div class="icon icon-store"></div> -->
-                    <h3 class="pricing__title">Beta Series</h3>
-                    <!-- <p class="pricing__sentence">Up to 5 users</p> -->
-                  </div>
-                  <div class="pricing__price">
-                    <span class="pricing__anim pricing__anim--2">
-                      <span class="pricing__period">starting from</span>
-                    </span>
-                    <span class="pricing__anim pricing__anim--1">
-                      <span class="pricing__currency">$</span>4.99
-                    </span>
-                    <!-- <span class="pricing__anim pricing__anim--2">
-                      <span class="pricing__period">per month</span>
-                    </span> -->
-                  </div>
-                  <div class="wrap-price">
-                    <ul class="pricing__feature-list">
-                      <li class="pricing__feature">1000 songs</li>
-                      <li class="pricing__feature">other feature</li>
-                      <li class="pricing__feature">other feature</li>
-                      <li class="pricing__feature">other feature</li>
-                      <li class="pricing__feature">other feature</li>
-                      <li class="pricing__feature">other feature</li>
-                      <li class="pricing__feature">other feature</li>
-                    </ul>
-                    <button class="pricing__action">Choose plan</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 animate-box">
-                <div class="pricing__item">
-                  <div class="wrap-price">
-                    <!-- <div class="icon icon-home2"></div> -->
-                    <h3 class="pricing__title">Bundle Series</h3>
-                    <!-- <p class="pricing__sentence">Unlimited users</p> -->
-                  </div>
-                  <div class="pricing__price">
-                    <span class="pricing__anim pricing__anim--2">
-                      <span class="pricing__period">starting from</span>
-                    </span>
-                    <span class="pricing__anim pricing__anim--1">
-                      <span class="pricing__currency">$</span>6.99
-                    </span>
-                  </div>
-                  <div class="wrap-price">
-                    <ul class="pricing__feature-list">
-                      <li class="pricing__feature">
-                        get alpha and beta series songs
-                      </li>
-                      <li class="pricing__feature">other feature</li>
-                      <li class="pricing__feature">other feature</li>
-                      <li class="pricing__feature">other feature</li>
-                      <li class="pricing__feature">other feature</li>
-                      <li class="pricing__feature">other feature</li>
-                      <li class="pricing__feature">other feature</li>
-                    </ul>
-                    <button class="pricing__action">Choose plan</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- <div
-        id="fh5co-register"
-        style="background-image: url(images/img_bg_2.jpg)"
-      >
-        <div class="overlay"></div>
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2 animate-box">
-            <div class="date-counter text-center">
-              <h2>Get 400 of Online Courses for Free</h2>
-              <h3>By Mike Smith</h3>
-              <div class="simply-countdown simply-countdown-one"></div>
-              <p><strong>Limited Offer, Hurry Up!</strong></p>
-              <p>
-                <a href="#" class="btn btn-primary btn-lg btn-reg"
-                  >Register Now!</a
-                >
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-      <!-- <div id="fh5co-gallery" class="fh5co-bg-section">
-        <div class="row text-center">
-          <h2><span>Instagram Gallery</span></h2>
-        </div>
-        <div class="row">
-          <div class="col-md-3 col-padded">
-            <a
-              href="#"
-              class="gallery"
-              style="background-image: url(images/project-5.jpg)"
-            ></a>
-          </div>
-          <div class="col-md-3 col-padded">
-            <a
-              href="#"
-              class="gallery"
-              style="background-image: url(images/project-2.jpg)"
-            ></a>
-          </div>
-          <div class="col-md-3 col-padded">
-            <a
-              href="#"
-              class="gallery"
-              style="background-image: url(images/project-3.jpg)"
-            ></a>
-          </div>
-          <div class="col-md-3 col-padded">
-            <a
-              href="#"
-              class="gallery"
-              style="background-image: url(images/project-4.jpg)"
-            ></a>
-          </div>
-        </div>
-      </div> -->
-
       <footer
         id="fh5co-footer"
         role="contentinfo"
-        style="background-image: url(images/img_bg_4.jpg)"
+        style="background-color: #fb6f53"
       >
-        <div class="overlay"></div>
+        <!-- <div class="overlay"></div> -->
         <div class="container">
           <div class="row row-pb-md">
             <div class="col-md-3 fh5co-widget">
-              <h3>About Fun Violin</h3>
+              <h3>About Fun Music</h3>
               <p>
-                Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia
-                reprehenderit. Eos cumque dicta adipisci architecto culpa amet.
+                Unleash your creativity as you play along with dynamic
+                accompaniments, turning every practice session into an exciting
+                adventure. Whether you're a budding musician or a seasoned
+                player, Fun Music puts the joy of learning music right at your
+                fingertips. Dive in and let the rhythm of Fun Music fuel your
+                passion for music!.
               </p>
             </div>
             <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
               <h3>Fun Violin</h3>
               <ul class="fh5co-footer-links">
+                <li><a href="#">Learn More</a></li>
                 <li><a href="#">Download PDF</a></li>
-                <li><a href="#">Menu 2</a></li>
-                <li><a href="#">Menu 3</a></li>
-                <li><a href="#">Menu 4</a></li>
-                <li><a href="#">Menu 5</a></li>
               </ul>
             </div>
 
             <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
               <h3>Fun Piano</h3>
               <ul class="fh5co-footer-links">
+                <li><a href="#">Learn More</a></li>
                 <li><a href="#">Download PDF</a></li>
-                <li><a href="#">Menu 2</a></li>
-                <li><a href="#">Menu 3</a></li>
-                <li><a href="#">Menu 4</a></li>
-                <li><a href="#">Menu 5</a></li>
               </ul>
             </div>
 
             <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
               <h3>Fun Drums</h3>
               <ul class="fh5co-footer-links">
+                <li><a href="#">Learn More</a></li>
                 <li><a href="#">Download PDF</a></li>
-                <li><a href="#">Menu 2</a></li>
-                <li><a href="#">Menu 3</a></li>
-                <li><a href="#">Menu 4</a></li>
-                <li><a href="#">Menu 5</a></li>
               </ul>
             </div>
 
-            <!-- <div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
-              <h3>Legal</h3>
+            <div class="col-md-3 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">
+              <h3>Other</h3>
               <ul class="fh5co-footer-links">
-                <li><a href="#">Find Designers</a></li>
-                <li><a href="#">Find Developers</a></li>
-                <li><a href="#">Teams</a></li>
-                <li><a href="#">Advertise</a></li>
-                <li><a href="#">API</a></li>
+                <li>
+                  <a href="http://www.funmusicsoftware.com/privacy-policy"
+                    >Privacy Policy</a
+                  >
+                </li>
               </ul>
-            </div> -->
+            </div>
           </div>
 
           <div class="row copyright">
             <div class="col-md-12 text-center">
               <p>
                 <small class="block"
-                  >&copy; 2023 Fun Music. All Rights Reserved.</small
+                  >&copy; <span id="currentYear"></span> Fun Music. All Rights
+                  Reserved.</small
                 >
-                <!-- <small class="block"
-                  >Designed by
-                  <a href="http://freehtml5.co/" target="_blank"
-                    >FreeHTML5.co</a
-                  >
-                  Demo Images:
-                  <a href="http://unsplash.co/" target="_blank">Unsplash</a>
-                  &amp;
-                  <a href="https://www.pexels.com/" target="_blank"
-                    >Pexels</a
-                  ></small
-                > -->
               </p>
             </div>
           </div>
@@ -1050,6 +672,12 @@
         day: d.getDate(),
         enableUtc: false,
       });
+
+      // Get the current year
+      var currentYear = new Date().getFullYear();
+
+      // Set the current year in the HTML
+      document.getElementById("currentYear").textContent = currentYear;
     </script>
   </body>
 </html>
