@@ -11,6 +11,7 @@ $brand-secondary: #09c6ab !default;
 
 $screen-sm: 768px;
 
+$brand-yellow: #e5af30;
 $brand-blue: #00c8ff;
 $brand-green: #31b493;
 
@@ -1881,8 +1882,7 @@ figure {
   }
 }
 
-.button-blue-app {
-  background-color: $brand-blue;
+.button-app {
   color: $brand-white;
   padding: 5px 20px;
   border: none;
@@ -1895,9 +1895,55 @@ figure {
   }
 }
 
+.button-blue {
+  background-color: $brand-blue;
+
+  &:hover {
+    background-color: darken($brand-blue, 5%);
+  }
+}
+
+.button-yellow {
+  background-color: $brand-yellow;
+
+  &:hover {
+    background-color: darken($brand-yellow, 5%);
+  }
+}
+
+.button-green {
+  background-color: $brand-green;
+
+  &:hover {
+    background-color: darken($brand-green, 5%);
+  }
+}
+
 .modal-dialog {
   margin-top: 10%;
   @media screen and (max-width: $screen-sm) {
     margin-top: 25%;
+  }
+}
+
+.container-main {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  @media screen and (max-width: $screen-sm) {
+    flex-direction: column;
+  }
+
+  .container-select {
+    width: 30%;
+    @media screen and (max-width: $screen-sm) {
+      width: 100%;
+    }
+  }
+  .container-details {
+    width: 70%;
+    @media screen and (max-width: $screen-sm) {
+      width: 100%;
+    }
   }
 }

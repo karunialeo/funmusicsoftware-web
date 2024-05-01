@@ -122,8 +122,10 @@
                   <li><a href="../index.html">Home</a></li>
                   <!-- <li><a href="courses.html">Courses</a></li> -->
                   <!-- <li><a href="teacher.html">Teacher</a></li> -->
-                  <li><a href="../fun-violin.html">Fun Violin</a></li>
-                  <li class="has-dropdown active">
+                  <li class="active">
+                    <a href="../fun-violin.html">Fun Violin</a>
+                  </li>
+                  <li class="has-dropdown">
                     <a href="#">Fun Drums</a>
                     <ul class="dropdown">
                       <li>
@@ -141,50 +143,97 @@
       </nav>
 
       <div id="fh5co-course-categories">
-        <div class="container">
+        <!-- <div class="container">
           <h1 style="text-align: center; margin-bottom: 40px">Preview</h1>
-        </div>
+        </div> -->
 
-        <!-- Button to trigger modal -->
-        <!-- <button type="button" class="btn btn-primary btn-lg">Open Modal</button> -->
-
-        <div class="container preview-container">
-          <div class="preview-button-container">
-            <!-- Button to show Book 1 and hide Book 2 -->
-            <button id="showBook1" class="button-primary-app">Book 1</button>
-
-            <!-- Button to show Book 2 and hide Book 1 -->
-            <button id="showBook2" class="button-primary-app">Book 2</button>
-          </div>
-          <div class="preview-image-container">
-            <div id="book1">
-              <div class="download-btn-div">
-                <button
-                  data-toggle="modal"
-                  data-target="#myModal"
-                  id="download-fd-book-1"
-                  class="button-blue button-app validate-download"
-                >
-                  Download
-                </button>
+        <div class="container">
+          <h2>Download Ebook</h2>
+          <div class="container-main">
+            <div class="container-select">
+              <div class="form-group">
+                <label for="seriesSelect">Select Book Series :</label>
+                <select class="form-control" id="seriesSelect">
+                  <option value="alpha">Alpha Series</option>
+                  <option value="beta">Beta Series</option>
+                </select>
               </div>
-              <div class="preview-image">
-                <img src="../images/fd-book-1-preview.jpg" alt="" />
+              <div class="form-group">
+                <label for="bookSelect">Select Book :</label>
+                <select class="form-control" id="bookSelect">
+                  <option value="Book1">Book 1</option>
+                  <option value="Book2">Book 2</option>
+                </select>
               </div>
             </div>
-            <div id="book2">
-              <div class="download-btn-div">
-                <button
-                  data-toggle="modal"
-                  data-target="#myModal"
-                  id="download-fd-book-2"
-                  class="button-blue button-app validate-download"
-                >
-                  Download
-                </button>
+            <div class="container-details">
+              <div id="alphaBook1" class="book-details">
+                <div id="book1">
+                  <div class="download-btn-div">
+                    <button
+                      data-toggle="modal"
+                      data-target="#myModal"
+                      id="download-fv-alpha-1"
+                      class="button-green button-app validate-download"
+                    >
+                      Download Alpha 1
+                    </button>
+                  </div>
+                  <div class="preview-image">
+                    <img src="../images/fv-alpha-book-1-preview.jpg" alt="" />
+                  </div>
+                </div>
               </div>
-              <div class="preview-image">
-                <img src="../images/fd-book-2-preview.jpg" alt="" />
+              <div id="alphaBook2" class="book-details" style="display: none">
+                <div id="book1">
+                  <div class="download-btn-div">
+                    <button
+                      data-toggle="modal"
+                      data-target="#myModal"
+                      id="download-fv-alpha-2"
+                      class="button-green button-app validate-download"
+                    >
+                      Download Alpha 2
+                    </button>
+                  </div>
+                  <div class="preview-image">
+                    <img src="../images/fv-alpha-book-2-preview.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div id="betaBook1" class="book-details" style="display: none">
+                <div id="book1">
+                  <div class="download-btn-div">
+                    <button
+                      data-toggle="modal"
+                      data-target="#myModal"
+                      id="download-fv-beta-1"
+                      class="button-green button-app validate-download"
+                    >
+                      Download Beta 1
+                    </button>
+                  </div>
+                  <div class="preview-image">
+                    <img src="../images/fv-beta-book-1-preview.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div id="betaBook2" class="book-details" style="display: none">
+                <div id="book1">
+                  <div class="download-btn-div">
+                    <button
+                      data-toggle="modal"
+                      data-target="#myModal"
+                      id="download-fv-beta-2"
+                      class="button-green button-app validate-download"
+                    >
+                      Download Beta 2
+                    </button>
+                  </div>
+                  <div class="preview-image">
+                    <img src="../images/fv-beta-book-2-preview.jpg" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -338,7 +387,7 @@
       </div>
 
       <footer id="fh5co-footer" role="contentinfo">
-        <div class="overlay fd-footer"></div>
+        <div class="overlay fv-footer"></div>
         <div class="container">
           <div class="row row-pb-md">
             <div class="col-md-3 fh5co-widget">
@@ -442,13 +491,43 @@
         });
       });
 
-      // document
-      //   .querySelector(".validate-download")
-      //   .addEventListener("click", function () {
-      //     var buttonId = this.id;
-      //     // Set the value of the hidden input to the button ID
-      //     document.getElementById("buttonIdInput").value = buttonId;
-      //   });
+      $(document).ready(function () {
+        // Parse URL params
+        var urlParams = new URLSearchParams(window.location.search);
+        var seriesParam = urlParams.get("series");
+        var bookParam = urlParams.get("book");
+        if (seriesParam) {
+          // Set default value of series select
+          $("#seriesSelect").val(seriesParam);
+        }
+        if (bookParam) {
+          // Set default value of series select
+          $("#bookSelect").val(bookParam);
+        }
+
+        // Function to show/hide book details based on selection
+        function showHideBookDetails() {
+          var series = $("#seriesSelect").val();
+          var book = $("#bookSelect").val();
+          $(".book-details").hide();
+          $("#" + series + book).show();
+        }
+
+        // Call showHideBookDetails on change event of select dropdowns
+        $("#seriesSelect, #bookSelect").change(function () {
+          showHideBookDetails();
+        });
+
+        // Call showHideBookDetails initially
+        showHideBookDetails();
+
+        $("#seriesSelect, #bookSelect").change(function () {
+          var series = $("#seriesSelect").val();
+          var book = $("#bookSelect").val();
+          $(".book-details").hide();
+          $("#" + series + book).show();
+        });
+      });
 
       var d = new Date(new Date().getTime() + 1000 * 120 * 120 * 2000);
 
@@ -472,74 +551,6 @@
 
       // Set the current year in the HTML
       document.getElementById("currentYear").textContent = currentYear;
-
-      // Function to get URL parameter value by name
-      function getUrlParameter(name) {
-        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
-        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
-        var results = regex.exec(location.search);
-        return results === null
-          ? ""
-          : decodeURIComponent(results[1].replace(/\+/g, " "));
-      }
-
-      // Get the value of the 'book' parameter from the URL
-      var book = getUrlParameter("book");
-
-      // Determine which div to display based on the value of the 'book' parameter
-      if (book === "1") {
-        document.getElementById("book1").style.display = "block";
-        document.getElementById("book2").style.display = "none";
-        document.getElementById("showBook1").classList.add("active");
-        document.getElementById("showBook2").classList.remove("active");
-      } else if (book === "2") {
-        document.getElementById("book1").style.display = "none";
-        document.getElementById("book2").style.display = "block";
-        document.getElementById("showBook1").classList.remove("active");
-        document.getElementById("showBook2").classList.add("active");
-      } else {
-        // Default to displaying Book 1 if the 'book' parameter is not provided or invalid
-        document.getElementById("book1").style.display = "block";
-        document.getElementById("book2").style.display = "none";
-        document.getElementById("showBook1").classList.add("active");
-        document.getElementById("showBook2").classList.remove("active");
-      }
-
-      // Button event listeners to show/hide divs
-      document
-        .getElementById("showBook1")
-        .addEventListener("click", function () {
-          document.getElementById("book1").style.display = "block";
-          document.getElementById("book2").style.display = "none";
-          document.getElementById("showBook1").classList.add("active");
-          document.getElementById("showBook2").classList.remove("active");
-        });
-
-      document
-        .getElementById("showBook2")
-        .addEventListener("click", function () {
-          document.getElementById("book2").style.display = "block";
-          document.getElementById("book1").style.display = "none";
-          document.getElementById("showBook1").classList.remove("active");
-          document.getElementById("showBook2").classList.add("active");
-        });
-
-      function validateDownload() {}
-
-      function downloadFile(fileUrl, filename) {
-        // Creating a temporary anchor element
-        var anchorElement = document.createElement("a");
-        anchorElement.setAttribute("target", "_blank");
-
-        // Setting the href attribute to the file URL
-        anchorElement.href = "http://" + fileUrl;
-
-        // Setting the download attribute to force download
-        anchorElement.download = filename; // You can customize the filename here if needed
-
-        // Clicking the anchor element programmatically
-        anchorElement.click();
-      }
 
       function onClickClose() {
         document.getElementById("loginForm").reset();

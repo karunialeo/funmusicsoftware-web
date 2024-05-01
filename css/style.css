@@ -1841,8 +1841,7 @@ figure {
   color: #fff;
 }
 
-.button-blue-app {
-  background-color: #00c8ff;
+.button-app {
   color: #fff;
   padding: 5px 20px;
   border: none;
@@ -1850,8 +1849,29 @@ figure {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.button-blue-app:hover {
+.button-app:hover {
   background-color: #00b4e6;
+}
+
+.button-blue {
+  background-color: #00c8ff;
+}
+.button-blue:hover {
+  background-color: #00b4e6;
+}
+
+.button-yellow {
+  background-color: #e5af30;
+}
+.button-yellow:hover {
+  background-color: #dfa51c;
+}
+
+.button-green {
+  background-color: #31b493;
+}
+.button-green:hover {
+  background-color: #2ca083;
 }
 
 .modal-dialog {
@@ -1860,6 +1880,33 @@ figure {
 @media screen and (max-width: 768px) {
   .modal-dialog {
     margin-top: 25%;
+  }
+}
+
+.container-main {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .container-main {
+    flex-direction: column;
+  }
+}
+.container-main .container-select {
+  width: 30%;
+}
+@media screen and (max-width: 768px) {
+  .container-main .container-select {
+    width: 100%;
+  }
+}
+.container-main .container-details {
+  width: 70%;
+}
+@media screen and (max-width: 768px) {
+  .container-main .container-details {
+    width: 100%;
   }
 }
 

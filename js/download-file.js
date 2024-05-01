@@ -119,6 +119,7 @@ document
 
             if (book !== "") {
               setTimeout(() => {
+                console.log(`download ${book} start`);
                 document
                   .getElementById("modal-success")
                   .dispatchEvent(new Event("click"));
