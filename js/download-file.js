@@ -14,9 +14,10 @@ document
       // Select the <p> element with id "error-message"
       const errorMessageElement = document.getElementById("error-message");
       // Modify the message content
-      errorMessageElement.textContent = "Username and password must be filled";
+      errorMessageElement.textContent =
+        "Fun Music ID and password must be filled";
 
-      throw new Error("Username and password must be filled");
+      throw new Error("Fun Music ID and password must be filled");
     }
 
     console.log("button id :", buttonId);
@@ -68,13 +69,16 @@ document
     };
 
     console.log(params);
-    fetch("http://funmusicsoftware.com/fun-violin/api/user_login.php", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(params),
-    })
+    fetch(
+      "https://funmusicsoftware.com/funmusicsoftware-webapi/user_login.php",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(params),
+      }
+    )
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not OK");
@@ -129,7 +133,7 @@ document
                 anchorElement.setAttribute("target", "_blank");
 
                 // Setting the href attribute to the file URL
-                anchorElement.href = "http://funmusicsoftware.com/" + book;
+                anchorElement.href = "https://funmusicsoftware.com/" + book;
 
                 // Setting the download attribute to force download
 

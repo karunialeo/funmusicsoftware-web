@@ -39,7 +39,7 @@ document
 
     // Send form data to the server using fetch
     fetch(
-      "http://funmusicsoftware.com/funmusicsoftware-api/email_contact_me.php",
+      "https://funmusicsoftware.com/funmusicsoftware-api/email_contact_me.php",
       {
         method: "POST",
         body: JSON.stringify(formData),
