@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reset Password - Fun Music</title>
+
+    <link
+      rel="shortcut icon"
+      href="../images/ICONWEB/icon-web-red.jpg"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="overlay-notes"></div>
+      <h2>Reset Password</h2>
+      <form id="resetForm">
+        <div class="input-group">
+          <label for="newPassword">New Password</label>
+          <input
+            type="password"
+            id="newPassword"
+            placeholder="Enter new password"
+            required
+          />
+        </div>
+        <div class="input-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirm new password"
+            required
+          />
+        </div>
+        <button type="submit">Reset Password</button>
+      </form>
+      <p id="message"></p>
+    </div>
+
+    <script src="reset-pass.js"></script>
+  </body>
+</html>
